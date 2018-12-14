@@ -45,6 +45,6 @@ def trin():
         traceback.print_exc()
 
 
-for i in range(50):
+for i in range(500):
     # 访问10次
     trin()

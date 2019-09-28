@@ -1,0 +1,17 @@
+# 第一步：卸载可能存在的旧版本（官网）
+
+sudo apt-get remove docker docker-engine docker-ce docker.io
+
+# 第二步:删除已安装包（不保留配置文件)
+
+sudo apt-get purge docker
+
+# 第三步:删除为了满足依赖而安装的，但现在不再需要的软件包（包括已安装包），保留配置文件。
+
+sudo apt-get autoremove docker
+
+# 第四步: 建议删除，如果你想删除所有的镜像，容器和卷，运行下面的命令
+
+rm -rf /var/lib/docker
+
+#你必须手动删除用户创建的配置文件
